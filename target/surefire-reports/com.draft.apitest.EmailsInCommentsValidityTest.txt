@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.draft.apitest.EmailsInCommentsValidityTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.015 s <<< FAILURE! -- in com.draft.apitest.EmailsInCommentsValidityTest
-com.draft.apitest.EmailsInCommentsValidityTest.failedCheckTest -- Time elapsed: 0.031 s <<< FAILURE!
-java.lang.AssertionError: 
-
-Expected: is <false>
-     but: was <true>
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at com.draft.apitest.EmailsInCommentsValidityTest.failedCheckTest(EmailsInCommentsValidityTest.java:111)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 s -- in com.draft.apitest.EmailsInCommentsValidityTest

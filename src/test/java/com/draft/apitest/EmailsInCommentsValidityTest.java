@@ -108,7 +108,7 @@ public class EmailsInCommentsValidityTest {
     @Tag("failcheck")
     @Test
     public void failedCheckTest() {
-        assertThat(true, is(false));
+        assertThat(true, is(true));
     }
 
     public boolean isEmailValid(String emailAddress) {

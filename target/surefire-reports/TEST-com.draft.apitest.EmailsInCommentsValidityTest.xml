@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="com.draft.apitest.EmailsInCommentsValidityTest" time="5.015" tests="2" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="com.draft.apitest.EmailsInCommentsValidityTest" time="0.123" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -7,13 +7,12 @@
     <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://ubuntu.com/"/>
-    <property name="user.timezone" value="Europe/Amsterdam"/>
     <property name="os.name" value="Linux"/>
     <property name="java.vm.specification.version" value="21"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/sh129/gh_cc/__demo/c_surepay/draft-apitest/target/surefire/surefirebooter-20241212110456048_3.jar /home/sh129/gh_cc/__demo/c_surepay/draft-apitest/target/surefire 2024-12-12T11-04-55_618-jvmRun1 surefire-20241212110456048_1tmp surefire_0-20241212110456048_2tmp"/>
+    <property name="sun.java.command" value="/home/sh129/gh_cc/__demo/c_surepay/draft-apitest/target/surefire/surefirebooter-20241212110831302_3.jar /home/sh129/gh_cc/__demo/c_surepay/draft-apitest/target/surefire 2024-12-12T11-08-31_135-jvmRun1 surefire-20241212110831302_1tmp surefire_0-20241212110831302_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/sh129/gh_cc/__demo/c_surepay/draft-apitest/target/test-classes:/home/sh129/gh_cc/__demo/c_surepay/draft-apitest/target/classes:/home/sh129/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/home/sh129/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/home/sh129/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/home/sh129/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/sh129/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/sh129/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/sh129/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/sh129/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/sh129/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/sh129/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/home/sh129/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/home/sh129/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/home/sh129/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/home/sh129/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/sh129/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/home/sh129/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/sh129/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/home/sh129/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/sh129/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:/home/sh129/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.jar:/home/sh129/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.jar:/home/sh129/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar:/home/sh129/.m2/repository/commons-validator/commons-validator/1.9.0/commons-validator-1.9.0.jar:/home/sh129/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/sh129/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/home/sh129/.m2/repository/commons-logging/commons-logging/1.3.2/commons-logging-1.3.2.jar:/home/sh129/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/sh129/gh_cc/__demo/c_surepay/draft-apitest/target/surefire/surefirebooter-20241212110456048_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/sh129/gh_cc/__demo/c_surepay/draft-apitest/target/surefire/surefirebooter-20241212110831302_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+11-Ubuntu-1ubuntu124.04"/>
     <property name="user.name" value="sh129"/>
@@ -44,6 +43,7 @@
     <property name="java.version" value="21.0.5"/>
     <property name="user.dir" value="/home/sh129/gh_cc/__demo/c_surepay/draft-apitest"/>
     <property name="os.arch" value="amd64"/>
+    <property name="groups" value="failcheck"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
@@ -54,127 +54,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="givenUsername_whenGetCommentsUnderUserPosts_thenEachShouldHaveProperEmailFormat(String)[1]" classname="com.draft.apitest.EmailsInCommentsValidityTest" time="4.8">
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://jsonplaceholder.typicode.com/users
-HTTP/1.1 200 OK
-id: 1 | username: Bret
-id: 2 | username: Antonette
-id: 3 | username: Samantha
-id: 4 | username: Karianne
-id: 5 | username: Kamren
-id: 6 | username: Leopoldo_Corkery
-id: 7 | username: Elwyn.Skiles
-id: 8 | username: Maxime_Nienow
-id: 9 | username: Delphine
-id: 10 | username: Moriah.Stanton
-- Retreiving posts and corresponding comments for user(Delphine):
-Request method:	GET
-Request URI:	https://jsonplaceholder.typicode.com/posts?userId=9
-HTTP/1.1 200 OK
-Request method:	GET
-Request URI:	https://jsonplaceholder.typicode.com/comments?postId=81
-HTTP/1.1 200 OK
--- postId: 81
----- commentId: 401 | email: Vella.Mayer@colten.net
----- commentId: 402 | email: Caleb_Dach@kathleen.us
----- commentId: 403 | email: Patience_Bahringer@dameon.biz
----- commentId: 404 | email: Destinee.Simonis@jose.tv
----- commentId: 405 | email: Keshaun@brown.biz
-Request method:	GET
-Request URI:	https://jsonplaceholder.typicode.com/comments?postId=82
-HTTP/1.1 200 OK
--- postId: 82
----- commentId: 406 | email: Merle.Schultz@marcel.org
----- commentId: 407 | email: Malvina_Fay@louie.name
----- commentId: 408 | email: Domenick_Douglas@gabe.us
----- commentId: 409 | email: Isaac@allene.net
----- commentId: 410 | email: Marianna.Pacocha@george.net
-Request method:	GET
-Request URI:	https://jsonplaceholder.typicode.com/comments?postId=83
-HTTP/1.1 200 OK
--- postId: 83
----- commentId: 411 | email: Sister_Barton@lela.com
----- commentId: 412 | email: Autumn.Lebsack@kasandra.ca
----- commentId: 413 | email: Irma.OKon@arden.me
----- commentId: 414 | email: Alaina_Hammes@carter.info
----- commentId: 415 | email: Alia@addison.org
-Request method:	GET
-Request URI:	https://jsonplaceholder.typicode.com/comments?postId=84
-HTTP/1.1 200 OK
--- postId: 84
----- commentId: 416 | email: Aurelie_McKenzie@providenci.biz
----- commentId: 417 | email: May_Steuber@virgil.net
----- commentId: 418 | email: Tessie@emilie.co.uk
----- commentId: 419 | email: Priscilla@colten.org
----- commentId: 420 | email: Aylin@abigale.me
-Request method:	GET
-Request URI:	https://jsonplaceholder.typicode.com/comments?postId=85
-HTTP/1.1 200 OK
--- postId: 85
----- commentId: 421 | email: Holden@kenny.io
----- commentId: 422 | email: Guillermo_Dare@dorothea.tv
----- commentId: 423 | email: Oscar@pearline.com
----- commentId: 424 | email: Jonathon_Feest@maxime.io
----- commentId: 425 | email: Micah_Wolf@lennie.co.uk
-Request method:	GET
-Request URI:	https://jsonplaceholder.typicode.com/comments?postId=86
-HTTP/1.1 200 OK
--- postId: 86
----- commentId: 426 | email: Shany@daisha.biz
----- commentId: 427 | email: Drew_Lemke@alexis.net
----- commentId: 428 | email: Karina.Donnelly@liam.com
----- commentId: 429 | email: Ahmed_Runolfsson@claire.name
----- commentId: 430 | email: Marilou_Halvorson@kane.io
-Request method:	GET
-Request URI:	https://jsonplaceholder.typicode.com/comments?postId=87
-HTTP/1.1 200 OK
--- postId: 87
----- commentId: 431 | email: Bernie.Schoen@seamus.co.uk
----- commentId: 432 | email: Joesph@darryl.net
----- commentId: 433 | email: Timmothy.Corwin@augustus.co.uk
----- commentId: 434 | email: Julien_OHara@vance.io
----- commentId: 435 | email: Susan.Bartell@euna.org
-Request method:	GET
-Request URI:	https://jsonplaceholder.typicode.com/comments?postId=88
-HTTP/1.1 200 OK
--- postId: 88
----- commentId: 436 | email: Selena.Quigley@johan.co.uk
----- commentId: 437 | email: Clifton_Boehm@jacynthe.io
----- commentId: 438 | email: Lizzie_Bartell@diamond.net
----- commentId: 439 | email: Yasmeen@golda.ca
----- commentId: 440 | email: Adolf.Russel@clark.ca
-Request method:	GET
-Request URI:	https://jsonplaceholder.typicode.com/comments?postId=89
-HTTP/1.1 200 OK
--- postId: 89
----- commentId: 441 | email: Elian@matilda.me
----- commentId: 442 | email: Salma@francis.net
----- commentId: 443 | email: Orlando_Dickinson@vern.org
----- commentId: 444 | email: Elda@orval.name
----- commentId: 445 | email: Dennis@karley.net
-Request method:	GET
-Request URI:	https://jsonplaceholder.typicode.com/comments?postId=90
-HTTP/1.1 200 OK
--- postId: 90
----- commentId: 446 | email: Jedediah@mason.io
----- commentId: 447 | email: Maryam@jack.name
----- commentId: 448 | email: Rick@carlos.tv
----- commentId: 449 | email: Vallie@jerrod.net
----- commentId: 450 | email: Adolph.Hayes@isobel.biz
-]]></system-out>
-  </testcase>
-  <testcase name="failedCheckTest" classname="com.draft.apitest.EmailsInCommentsValidityTest" time="0.031">
-    <failure message="&#10;Expected: is &lt;false&gt;&#10;     but: was &lt;true&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-
-Expected: is <false>
-     but: was <true>
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at com.draft.apitest.EmailsInCommentsValidityTest.failedCheckTest(EmailsInCommentsValidityTest.java:111)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-]]></failure>
-  </testcase>
+  <testcase name="failedCheckTest" classname="com.draft.apitest.EmailsInCommentsValidityTest" time="0.034"/>
 </testsuite>
