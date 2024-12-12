@@ -1,22 +1,15 @@
 version: 2.1
 
-orbs:
-  browser-tools: circleci/browser-tools@1.4.9
-
 jobs:
   build-and-test:
     docker:
-      - image: cimg/openjdk:17.0.12-browsers
+      - image: cimg/openjdk:17.0.12
 
     steps:
       - checkout
-      - browser-tools/install-browser-tools
       - run: mvn test
-      #- run: mvn jacoco:report
       - store_test_results:
           path: target/surefire-reports
-      - store_artifacts:
-          path: target
 
 workflows:
   build-and-test-workflow:
