@@ -10,3 +10,8 @@ jobs:
       - run: mvn test
       - store_test_results:
           path: target/surefire-reports
+
+workflows:
+  build-and-test-workflow:
+    jobs:
+      - build-and-test
