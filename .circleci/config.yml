@@ -3,10 +3,15 @@ version: 2.1
 jobs:
   build-and-test:
     docker:
-      - image: circleci/openjdk:17-jdk
+      - image: cimg/openjdk:17.0.12
 
     steps:
       - checkout
       - run: mvn test
       - store_test_results:
           path: target/surefire-reports
+
+workflows:
+  build-and-test-workflow:
+    jobs:
+      - build-and-test
