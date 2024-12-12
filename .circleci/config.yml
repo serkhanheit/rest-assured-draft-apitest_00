@@ -7,11 +7,15 @@ jobs:
 
     steps:
       - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
       - run: mvn test
       - store_test_results:
           path: target/surefire-reports
+      - store_artifacts:
+          path: target
 
 workflows:
-  build-and-test-workflow:
+  workflow-build-and-test:
     jobs:
       - build-and-test

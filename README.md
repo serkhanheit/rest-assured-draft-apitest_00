@@ -39,5 +39,7 @@ $ mvn test -Dgroups="flow"
 $ mvn test -Dgroups="email_format"
 
 ```
-**Remark**: Currently kept under test stage. Differentiation between unit and itg tests can be made by means of taggings or it can be moved to "integration-test" stage later.
+**Remarks**: 
+- Testcase is kept under _unit tests_ for the time being.
+- Differentiation between _unit_ and _integration tests_ can be made by means of taggings or they can be moved to _integration tests_ in next phases.
 
