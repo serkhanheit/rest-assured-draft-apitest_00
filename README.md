@@ -1,20 +1,43 @@
-# Contents
+[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/WpmyY8VXzpWRMEk9MTHKSj/DMYCCyeQyD2fAwHXcQ3Ysi/tree/main.svg?style=svg&circle-token=CCIPRJ_B7JipfsFwKV2fyTFXaSBL_7ac271ffaa0f7ea8d1e7872ca9874338894b88f7)](https://dl.circleci.com/status-badge/redirect/circleci/WpmyY8VXzpWRMEk9MTHKSj/DMYCCyeQyD2fAwHXcQ3Ysi/tree/main)
 
-- [Test branch, integration with circleci](#test-branch-integration-with-circleci)
-  - [Update circleci configuration](#update-circleci-configuration)
+# Early phase api test project
 
+- [Description](#description)
+  - [Tools](#tools)
+  - [CI integration:](#ci-integration)
+  - [Run tests](#run-tests)
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/WpmyY8VXzpWRMEk9MTHKSj/DMYCCyeQyD2fAwHXcQ3Ysi/tree/add-readme.svg?style=svg&circle-token=CCIPRJ_B7JipfsFwKV2fyTFXaSBL_7ac271ffaa0f7ea8d1e7872ca9874338894b88f7)](https://dl.circleci.com/status-badge/redirect/circleci/WpmyY8VXzpWRMEk9MTHKSj/DMYCCyeQyD2fAwHXcQ3Ysi/tree/add-readme) | [![CircleCI](https://dl.circleci.com/status-badge/img/circleci/WpmyY8VXzpWRMEk9MTHKSj/DMYCCyeQyD2fAwHXcQ3Ysi/tree/main.svg?style=svg&circle-token=CCIPRJ_B7JipfsFwKV2fyTFXaSBL_7ac271ffaa0f7ea8d1e7872ca9874338894b88f7)](https://dl.circleci.com/status-badge/redirect/circleci/WpmyY8VXzpWRMEk9MTHKSj/DMYCCyeQyD2fAwHXcQ3Ysi/tree/main)
+# Description
 
-# Test branch, integration with circleci
+Focuses on an example REST api test of a sample user case flow. 
+Scope and constraints are as follows:
+  - Validation of email formats in comments section 
+  - Project is in early phase of api design. 
+    - Test will be running via existing/external mock-server
 
+## Tools
 
-## Update circleci configuration
+- Java
+- Rest Assured
+- Maven
+- Circle CI (for continous integration parts)
 
-[See available docker images](https://circleci.com/developer/images/image/cimg/openjdk)
+## CI integration:
 
-```yaml
+In progress (main branch checks)..
 
-      - image: cimg/openjdk:17.0.12
+## Run tests
+
+Test can be run via Maven cli as follows:
+
+```bash
+
+$ mvn clean test
+
+# or specific test groups
+$ mvn test -Dgroups="flow"
+$ mvn test -Dgroups="email_format"
 
 ```
+**Remark**: Currently kept under test stage. Differentiation between unit and itg tests can be made by means of taggings or it can be moved to "integration-test" stage later.
+
