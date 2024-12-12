@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  browser-tools: circleci/browser-tools@1.2.3
+
 jobs:
   build-and-test:
     docker:
@@ -7,9 +10,12 @@ jobs:
 
     steps:
       - checkout
+      - browser-tools/install-browser-tools
       - run: mvn test
       - store_test_results:
           path: target/surefire-reports
+      - store_artifacts:
+          path: target
 
 workflows:
   build-and-test-workflow:
