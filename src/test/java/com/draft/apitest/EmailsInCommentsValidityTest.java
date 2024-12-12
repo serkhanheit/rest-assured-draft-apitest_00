@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import org.apache.commons.validator.routines.EmailValidator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import com.draft.apitest.helper.User;
@@ -22,9 +22,8 @@ public class EmailsInCommentsValidityTest {
     private static String baseUrl = "https://jsonplaceholder.typicode.com";
     // private static String baseUrl = "http://localhost:3000";
 
-// 3. For each post, fetch the comments and validate if the emails in the comment section are in the proper format.
     @DisplayName("Comments under posts of a specific user should have proper email format")
-    @Tag("flow")
+    @Tags({@Tag("flow"), @Tag("email_format")})
     @ParameterizedTest
     @ValueSource(strings= {"Delphine"})
     public void givenUsername_whenGetCommentsUnderUserPosts_thenEachShouldHaveProperEmailFormat(
@@ -46,9 +45,6 @@ public class EmailsInCommentsValidityTest {
             out.println(String.format("id: %d | username: %s", _user.getId(), _user.getUsername()));
         });
 
-        // List<Map<String, Object>> usersFiltered =
-        //          jsonPath.param("username", "Delphine").
-        //          get(" findAll { it -> it.username == username }");
         List<User> usersFiltered = 
             users.stream().
                 filter(user -> user.getUsername().equals(username)).
@@ -151,7 +147,7 @@ public class EmailsInCommentsValidityTest {
     }
 
     Response getCommentsForThePost(int postId) {
-        // GET /comments?postId=1
+
         String endPoint = baseUrl + "/comments";
 
         var result = 
