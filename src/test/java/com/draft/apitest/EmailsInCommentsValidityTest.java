@@ -8,6 +8,7 @@ import org.apache.commons.validator.routines.EmailValidator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import com.draft.apitest.helper.User;
@@ -101,6 +102,13 @@ public class EmailsInCommentsValidityTest {
             });
         });
 
+    }
+
+    @DisplayName("circleci failed testcase check")
+    @Tag("failcheck")
+    @Test
+    public void failedCheckTest() {
+        assertThat(true, is(false));
     }
 
     public boolean isEmailValid(String emailAddress) {
