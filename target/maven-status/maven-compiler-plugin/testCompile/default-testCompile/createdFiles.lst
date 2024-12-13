@@ -1,8 +1,0 @@
-com/draft/apitest/AppTest.class
-com/draft/apitest/helper/UserCompany.class
-com/draft/apitest/helper/UserPostComment.class
-com/draft/apitest/helper/UserPost.class
-com/draft/apitest/EmailsInCommentsValidityTest.class
-com/draft/apitest/helper/User.class
-com/draft/apitest/helper/UserAddressGeo.class
-com/draft/apitest/helper/UserAddress.class

@@ -11,8 +11,7 @@ jobs:
     steps:
       - checkout
       - browser-tools/install-browser-tools
-      - run: mvn test
-      #- run: mvn jacoco:report
+      - run: mvn jacoco:prepare-agent test jacoco:report
       - store_test_results:
           path: target/surefire-reports
       - store_artifacts:
