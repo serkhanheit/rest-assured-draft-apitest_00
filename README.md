@@ -17,14 +17,14 @@ Main scope and constraints are as follows:
 
 ## Tools
 
-- Java
+- Java 21
 - Rest Assured
 - Maven
-- Circle CI (for continous integration parts)
 
 ## CI integration:
 
-In progress (main branch checks)..
+- Circle CI
+- jacoco-maven-plugin (Coverage reports can be seen via CI artifacts at target/site/jacoco/index.html)
 
 ## Run tests
 

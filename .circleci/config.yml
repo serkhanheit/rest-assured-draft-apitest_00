@@ -1,15 +1,19 @@
 version: 2.1
 
+orbs:
+  browser-tools: circleci/browser-tools@1.4.9
+
 jobs:
   build-and-test:
     docker:
-      - image: cimg/openjdk:17.0.12
+      - image: cimg/openjdk:21.0.5-browsers
 
     steps:
       - checkout
       - setup_remote_docker:
-          docker_layer_caching: true
-      - run: mvn test
+          docker_layer_caching: true      
+      - browser-tools/install-browser-tools
+      - run: mvn jacoco:prepare-agent test jacoco:report
       - store_test_results:
           path: target/surefire-reports
       - store_artifacts:

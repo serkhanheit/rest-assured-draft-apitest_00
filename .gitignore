@@ -25,3 +25,4 @@ replay_pid*
 
 # target/surefire-reports/*.bin
 *.bin
+target/
