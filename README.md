@@ -24,7 +24,7 @@ Main scope and constraints are as follows:
 ## CI integration:
 
 - Circle CI
-- Maven plugin Jacoco
+- jacoco-maven-plugin (Coverage reports can be seen via CI artifacts at target/site/jacoco/index.html)
 
 ## Run tests
 

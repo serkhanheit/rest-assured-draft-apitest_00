@@ -10,6 +10,8 @@ jobs:
 
     steps:
       - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true      
       - browser-tools/install-browser-tools
       - run: mvn jacoco:prepare-agent test jacoco:report
       - store_test_results:
