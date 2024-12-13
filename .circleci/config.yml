@@ -1,8 +1,5 @@
 version: 2.1
 
-orbs:
-  browser-tools: circleci/browser-tools@1.4.9
-
 jobs:
   build-and-test:
     docker:
@@ -18,6 +15,6 @@ jobs:
           path: target
 
 workflows:
-  build-and-test-workflow:
+  workflow-build-and-test:
     jobs:
       - build-and-test
