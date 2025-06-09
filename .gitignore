@@ -26,3 +26,10 @@ replay_pid*
 # target/surefire-reports/*.bin
 *.bin
 target/
+
+# nvim (Eclipse specific files)
+.classpath
+.project
+.settings/
+
+aux_*/
